@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colour Palets */
+    /* --c1: #EEEEEE;
+    --c2: #21b5bd;
+    --c3: #31363F;
+    --c4: #222831;
+    --c5: #cc1111;
+    --c6: #910fe7; */
+
+    /* Black Theme */
+    /* --nav-bg: #31363F;
+    --nav-logo: #21b5bd;
+    --nav-link: #EEEEEE;
+    --nav-link-hover: #cc1111;
+    --nav-link-active: #21b5bd;
+    --nav-button-text: #EEEEEE;
+    --nav-button-text-hover: #222831;
+    --nav-button-bg: #cf4444;
+    --nav-button-bg-hover: #21b5bd; */
+
+
+
+    /* White Theme */
+    --nav-bg: #EEEEEE;
+    --nav-logo: #910fe7;
+    --nav-link: #31363F;
+    --nav-link-hover: #cc1111;
+    --nav-link-active: #76ABAE;
+    --nav-button-text: #EEEEEE;
+    --nav-button-text-hover: #76ABAE;
+    --nav-button-bg: #cf4444;
+    --nav-button-bg-hover: #222831;
+}
+
+
+.font-nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg);
+    padding: 10px 30px 10px 30px;
+
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
+
+nav h1 {
+    color: var(--nav-logo);
+    cursor: default;
+}
+
+nav a {
+    color: var(--nav-link);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+nav a:hover {
+    color: var(--nav-link-hover);
+}
+
+nav a:active {
+    color: var(--nav-link-active);
+}
+
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: var(--nav-button-bg);
+    color: var(--nav-button-text);
+    cursor: pointer;
+}
+
+nav button:hover {
+    padding: 10px 20px;
+    transform: scale(1.1);
+    transition: .2s;
+    border-radius: 20px;
+    background: var(--nav-button-bg-hover);
+    color: var(--nav-button-text-hover);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-nunito {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .card {
+            display: inline-block;
+            width: 300px;
+            border: 1px solid #00000029;
+            border-radius: 10px;
+            margin: 5px;
+
+        }
+
+        .card img {
+            display: block;
+            width: 95%;
+            margin: 5px auto 5px auto;
+            border-radius: 10px;
+            border: 1px solid #00000029;
+
+        }
+
+        .catagory {
+            margin: 10px;
+        }
+
+        .catagory div {
+            display: inline-block;
+            margin: 5px;
+            padding: 4px 8px 4px 8px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .catagory div:hover {
+            background-color: #0000000d;
+        }
+
+        .card h1 {
+            margin: 15px;
+            font-size: 25px;
+            font-weight: 750;
+        }
+
+        .card p {
+            margin: 15px;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .card button {
+            width: 40%;
+            margin: 15px auto;
+            display: block;
+            padding: 13px 20px 13px 20px;
+            border-radius: 30px;
+            background-color: #e1eeff;
+            color: rgb(8, 129, 249);
+            border: none;
+        }
+
+        .card button:hover {
+            background-color: #b1d6ff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card font-nunito">
+            <img src="https://images.unsplash.com/photo-1716847214575-4e5a41cdd3da?w=500&auto=format&fit=crop"
+                alt="card image">
+            <div class="catagory">
+                <div>Reaction</div>
+                <div>Human</div>
+            </div>
+            <h1>Heading about</h1>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eligendi magni ipsa soluta fugit voluptas
+                voluptatibus nemo. Natus, quis quisquam?
+            </p>
+            <button class="card-button">Read More</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
