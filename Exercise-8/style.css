@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.font-nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    background: aqua;
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.ball {
+    background-color: chocolate;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+
+    animation: 
+        translate-x 7.5s linear infinite alternate,
+        spread 1s cubic-bezier(0,.92,0,1.05) infinite alternate,
+        bounce-y 1s cubic-bezier(.22,.61,.36,1) infinite alternate;
+}
+
+
+@keyframes bounce-y {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes translate-x {
+    from{
+        left: 0;
+    }
+    to{
+        left: calc(100% - 100px);
+    }
+}
+
+@keyframes spread {
+    from{ 
+        width: 130px;
+        height: 70px;
+    }
+    to {
+    }
+}
+
