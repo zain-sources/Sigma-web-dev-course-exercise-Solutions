@@ -10,5 +10,5 @@ Sigma Web Development Course is an amazing full stack Web Development Course by 
 
 
 ## 🔗 Links
-[![YouTube](https://img.shields.io/badge/CodeWithHarry-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)(https://youtube.com/@codewithharry)]
+[![YouTube](https://img.shields.io/badge/CodeWithHarry-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@codewithharry)]
 
