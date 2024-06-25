@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    margin: 10px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+}
+.btn-box button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #525151;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-box button:hover {
+    background-color: #424242;
+}
+
+.btn-box button:active {
+    background-color: #333333;
+}
+
+.card {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    font-family: 'Roboto';
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #2b2b2b;
+}
+
+.card-body {
+    box-sizing: border-box;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.card-img-box {
+    display: flex;
+    position: relative;
+    width: 170px;
+}
+
+.card-img-box img {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-time {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: #00000081;
+    border-radius: 4px;
+    padding: 2px 5px;
+
+
+}
+
+.card-content h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 5px 0;
+}
+
+.card-content ul {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #cecece;
+    margin: 10px 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.card-end {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    font-size: 18px;
+}
+
+.card-footer div {
+    font-size: 30px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.card-footer div:active {
+    background-color: #424242;
+}
