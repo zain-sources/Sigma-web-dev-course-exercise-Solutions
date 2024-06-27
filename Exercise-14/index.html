@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <nav class="nav-side">
+        <ul class="pin-apps">
+            <li><img src="images/teminal-icon.png" alt="terminal-icon"></li>
+            <li><img src="images/firefox-icon.png" alt="firefox-icon"></li>
+            <li><img src="images/file-browser-icon.jpg" alt="file-browser-icon"></li>
+        </ul>
+        <div class="all-apps-icon">
+            <span class="material-symbols-outlined">apps</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="terminal-window" id="terminal">
+            <div class="terminal-titlebar">
+                <h3>mark@linux-desktop: ~</h3>
+                <ul id="terminal-buttons">
+                    <li><span class="material-symbols-outlined">remove</span></li>
+                    <li><span class="material-symbols-outlined">check_box_outline_blank</span></li>
+                    <li><span class="material-symbols-outlined">close</span></li>
+                </ul>
+            </div>
+            <div class="terminal-menubar">
+                <ul>
+                    <li>File</li>
+                    <li>Edit</li>
+                    <li>View</li>
+                    <li>Search</li>
+                    <li>Terminal</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+
+                <div class="terminal-body-line">
+                    <span class="terminal-body-line-rootdir">
+                        <span>mark@linux-desktop</span>
+                        <span>: </span>
+                        <span>~</span>
+                        <span>$ </span>
+                    </span>
+                    <input class="termial-usercommand" type="text" id="command-text" name="command-text"
+                        placeholder="Type start and Press Enter">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

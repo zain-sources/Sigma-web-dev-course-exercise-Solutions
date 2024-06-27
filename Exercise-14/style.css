@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("images/ubantu.jpg") center center/cover;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(200, 200, 200);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.nav-side {
+    position: fixed;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #2d0922d2;
+    padding: 10px 5px;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+}
+
+.pin-apps{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pin-apps li{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px; 
+    cursor: pointer;   
+}
+
+.pin-apps li:hover{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.259);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.192);
+}
+
+.pin-apps li img{
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+}
+
+
+.all-apps-icon {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.all-apps-icon :hover{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.259);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.192);
+}
+
+.all-apps-icon span{
+    font-size: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: calc(100% - 70px);
+    align-items: center;
+    margin-left: 70px;
+}
+
+.terminal-window {
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.291);
+    width: 80%;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.186);
+    transition: all 1s cubic-bezier(.92,.77,.25,1.01);
+    transform: scale(1);
+}
+
+.terminal-titlebar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #56544c, #3d3c37);
+    border-radius: 10px 10px 0 0;
+
+}
+
+.terminal-titlebar>h3 {
+    font-weight: 400;
+}
+
+.terminal-titlebar ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.terminal-titlebar ul>li {
+    margin: 0 5px;
+    box-shadow: 0 0 2px 1px black;
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #9f9e99, #504f49);
+    cursor: pointer;
+}
+
+.terminal-titlebar ul>li:last-child {
+    background-image: linear-gradient(to bottom, #f28867, #df4f1d);
+}
+
+.terminal-titlebar ul>li>span {
+    font-size: 20px;
+    color: #3d3c37;
+}
+
+.terminal-titlebar ul>li>span::selection {
+    background-color: transparent;
+}
+
+.terminal-titlebar ul>li>span:active {
+    color: #fff;
+}
+
+.terminal-titlebar ul>li:active {
+    filter: brightness(0.8);
+
+}
+
+
+.terminal-menubar {
+    height: 35px;
+    background-color: #3b3a38;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-menubar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.terminal-menubar ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.terminal-menubar ul li::selection {
+    background-color: transparent;
+}
+
+.terminal-menubar ul li:active {
+    background-color: #282828;
+    color: #fff;
+}
+
+
+.terminal-body {
+    background-color: #2d0922;
+    width: 100%;
+    height: calc(100% - 85px);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.terminal-body-line {
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    letter-spacing: 1.2px;
+}
+
+.terminal-body-line-rootdir > span:nth-child(1){
+    color: #89de32;
+}
+
+.terminal-body-line-rootdir > span:nth-child(3){
+    color: #6997c7;
+}
+
+
+.termial-usercommand {
+    flex-grow: 1;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
