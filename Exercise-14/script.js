@@ -18,6 +18,9 @@ function terminalToggler() {
     if (terminal.style.transform == "scale(0)") {
         terminal.style.transform = "scale(1)"
     }
+    else if (terminal.style.transform == "scale(1.2)") {
+        terminal.style.transform = "scale(1)"
+    }
     else{
         terminal.style.transform = "scale(0)"
     }
@@ -35,7 +38,7 @@ function terminalCloser() {
 function terminalMaximizer() {
     terminal = document.getElementById('terminal');
     console.log(terminal.style.transform)
-    if (terminal.style.transform == "scale(1)") {
+    if (terminal.style.transform == "" || terminal.style.transform == "scale(1)") {
         terminal.style.transform = "scale(1.2)"
     }
 }
@@ -52,10 +55,16 @@ function main() {
                 span.className = "termial-usercommand";
                 span.innerText = command;
                 input_field.replaceWith(span);
-                flowStarter();
+                startCommandStarter();
             }
             else if (command !== "") {
                 console.log("Invalid Command")
+                let span = document.createElement('span');
+                span.className = "termial-usercommand";
+                span.innerText = command;
+                input_field.replaceWith(span);
+                warningCommandStarter(command);
+
             }
             else {
                 console.log("Enter Command first")
@@ -66,8 +75,16 @@ function main() {
 
 main();
 
+async function warningCommandStarter(command) {
+    
+    let line1 = new_line(`(^_-) Invalid Command:  ${command}`, 0);
 
-async function flowStarter() {
+    let line_11 = new_line("", 0, true);
+    main();
+}
+
+
+async function startCommandStarter() {
     let total_time = 0;
     let max_time = 5000;
 
